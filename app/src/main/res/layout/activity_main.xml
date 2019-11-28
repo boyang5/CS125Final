@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00964949"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#83FF9800"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#9C27B0"
+            android:text="Currency Convertor"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            android:textColorHighlight="#FF0000"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/start"
+                android:layout_width="81dp"
+                android:layout_height="115dp"
+                android:layout_weight="1"
+                android:background="#8BC34A"
+                android:ems="10"
+                android:hint="enter currency"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:padding="5dp"
+                android:text="  TO"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/end"
+                android:layout_width="77dp"
+                android:layout_height="115dp"
+                android:layout_weight="1"
+                android:background="#8BC34A"
+                android:ems="10"
+                android:hint="enter currency"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:ems="10"
+            android:hint="enter the amount you want to convert"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/convert"
+            style="@android:style/Widget.Holo.Button.Toggle"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#9C27B0"
+            android:text="Convert"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="327dp"
+            android:background="#8BC34A"
+            android:hint="result will show here"
+            android:includeFontPadding="false"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</LinearLayout>
